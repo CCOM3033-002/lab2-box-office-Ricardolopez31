@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
 using namespace std; 
+#include<iomanip>
 int main(){
     
     //desplegar proposito del programa
     std::cout<<"Este programa calcula la cantidad de dinero que hizo un cine y el distribudor de la pelicula" << std::endl;
 
     //establecer variables
-   int Num_Nin, Num_Adu,total, total_dist;
+   int Num_Nin, Num_Adu,total, gross_profit, net_box,distributor_pay;
    string movie;
   
     double Adulto_tik = 10.00;
@@ -31,8 +32,25 @@ int main(){
     std::cout << std::endl; 
 
     // calculacion de taquillas
-    total=(Num_Nin*Nino_tik) + (Num_Adu*Adulto_tik);
+    gross_profit=(Num_Nin*Nino_tik) + (Num_Adu*Adulto_tik);
+    net_box= gross_profit*0.20;
+    distributor_pay= gross_profit-net_box;
+
+    //printear los resultados formateados 
+    std::cout<<"Movie Name:                    "<< movie <<endl;
    
+    std::cout<<"Tickets de adulto:             "<< Num_Adu<<endl;
+
+    std::cout<<"Tickets de niños:              "<< Num_Nin<<endl;
+    
+    // cambiar precision de cout
+    cout  << fixed << setprecision(2);  
+
+    std::cout<<"Gross box office profit:      $"<< gross_profit<<endl;
+
+    std::cout<<"Net Box Office Profit:        $"<< net_box<<endl;
+
+    std::cout<<"Amount Paid to Distributor:   $"<< distributor_pay;
 
 
     //
