@@ -8,7 +8,7 @@ int main(){
     std::cout<<"Este programa calcula la cantidad de dinero que hizo un cine y el distribudor de la pelicula" << std::endl;
 
     //establecer variables
-   int Num_Nin, Num_Adu,total,;
+   int Num_Nin, Num_Adu,total;
    double gross_profit, net_box,distributor_pay;
    string movie;
   
@@ -47,11 +47,11 @@ int main(){
     // cambiar precision de cout
     cout  << fixed << setprecision(2);  
 
-    std::cout<<fixed<< setprecision(2)<<"Gross box office profit:      $"<< gross_profit<<endl;
+    std::cout<<"Gross box office profit:      $ "<< gross_profit<<endl;
 
-    std::cout<<"Net Box Office Profit:        $"<< net_box<<endl;
+    std::cout<<"Net Box Office Profit:        $ "<< net_box<<endl;
 
-    std::cout<<"Amount Paid to Distributor:   $"<< distributor_pay;
+    std::cout<<"Amount Paid to Distributor:   $ "<< distributor_pay;
 
 
     //
