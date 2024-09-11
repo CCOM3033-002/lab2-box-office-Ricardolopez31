@@ -38,7 +38,7 @@ int main(){
     distributor_pay= gross_profit-net_box;
 
     //printear los resultados formateados 
-    std::cout<<"Movie Name:                    "<< movie <<endl;
+    std::cout<<"Movie Name:                    "<< std::cout<<'\"' movie<< std::cout<<'\"' <<endl;
    
     std::cout<<"Tickets de adulto:             "<< Num_Adu<<endl;
 
