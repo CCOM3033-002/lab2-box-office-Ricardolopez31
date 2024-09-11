@@ -3,15 +3,15 @@
 using namespace std; 
 #include<iomanip>
 int main(){
-    
+
     //desplegar proposito del programa
     std::cout<<"Este programa calcula la cantidad de dinero que hizo un cine y el distribudor de la pelicula" << std::endl;
 
     //establecer variables
-   int Num_Nin, Num_Adu,total;
+   int Num_Nin, Num_Adu;
    double gross_profit, net_box,distributor_pay;
    string movie;
-  
+
     double Adulto_tik = 10.00;
     double Nino_tik = 6.00;
 
@@ -24,7 +24,7 @@ int main(){
     std::cin>>Num_Nin;
     cin.ignore(900, '\n'); 
     std::cout << std::endl; 
-    
+
 
 
     std::cout<< "Cantidad de taquillas de Adultos vendidas?: ";
@@ -38,8 +38,8 @@ int main(){
     distributor_pay= gross_profit-net_box;
 
     //printear los resultados formateados 
-    std::cout<<"Movie Name:                    "<< std::cout<<'\"' movie<< std::cout<<'\"' <<endl;
-   
+    std::cout<<"Movie Name:                    "<<"\""<< movie<<"\""<<endl;         
+
     std::cout<<"Tickets de adulto:             "<< Num_Adu<<endl;
 
     std::cout<<"Tickets de niños:              "<< Num_Nin<<endl;
