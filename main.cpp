@@ -38,21 +38,26 @@ int main(){
     distributor_pay= gross_profit-net_box;
 
     //printear los resultados formateados 
-    std::cout<<"Movie Name:                    "<<"\""<< movie<<"\""<<endl;         
+   std::cout << setw(30) << left << "Movie Name: " 
+          << "\"" << movie << "*\"" << endl;
 
-    std::cout<<"Tickets de adulto:             "<< Num_Adu<<endl;
+std::cout << setw(34) << left << "Tickets de adulto: " 
+          << Num_Adu << endl;
 
-    std::cout<<"Tickets de niños:              "<< Num_Nin<<endl;
-    
-    // cambiar precision de cout
-    cout  << fixed << setprecision(2);  
+std::cout << setw(35) << left << "Tickets de niños: " 
+          << Num_Nin << endl;
 
-    std::cout<<"Gross box office profit:      $ "<< gross_profit<<endl;
+// set precison para presentar decimales 
+cout << fixed << setprecision(2);
 
-    std::cout<<"Net Box Office Profit:        $ "<< net_box<<endl;
+std::cout << setw(30) << left << "Gross Box Office Profit: " 
+          << "$ " << gross_profit << endl;
 
-    std::cout<<"Amount Paid to Distributor:   $ "<< distributor_pay;
+std::cout << setw(30) << left << "Net Box Office Profit: " 
+          << "$ " << net_box << endl;
 
+std::cout << setw(30) << left << "Amount Paid to Distributor: " 
+          << "$ " << distributor_pay << endl;
 
     //
 
